@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        nextek: "#FA005F",
+        nextekHover: "#D1004F"
+      },
+    },
   },
   plugins: [],
 };
