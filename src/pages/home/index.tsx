@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { api } from "../../services/api";
 
 import { TbShoppingCartPlus } from "react-icons/tb";
 
-interface ProductProps {
+import { CartContext } from "../../contexts/CartContext";
+
+export interface ProductProps {
   id: number;
   title: string;
   description: string;
@@ -12,6 +14,7 @@ interface ProductProps {
 }
 
 export function Home() {
+  const { addItemCart } = useContext(CartContext);
   const [products, setProducts] = useState<ProductProps[]>([]);
 
   useEffect(() => {
@@ -21,6 +24,10 @@ export function Home() {
     }
     getProducts();
   }, []);
+
+  function handleAddCartItem(product: ProductProps) {
+    addItemCart(product);
+  }
 
   return (
     <div>
@@ -60,7 +67,10 @@ export function Home() {
                       currency: "BRL",
                     })}
                   </strong>
-                  <button className="bg-nextek p-1 rounded transition-all duration-200 ease-linear hover:bg-nextekHover">
+                  <button
+                    className="bg-nextek p-1 rounded transition-all duration-200 ease-linear hover:bg-nextekHover"
+                    onClick={() => handleAddCartItem(product)}
+                  >
                     <TbShoppingCartPlus size={28} color="#fff" />
                   </button>
                 </div>
