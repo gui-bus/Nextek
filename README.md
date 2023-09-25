@@ -30,7 +30,6 @@ Explore a variedade de produtos de alta qualidade na Nextec, sua fonte confiáve
 ## Tecnologias utilizadas :dart:
 
 <div style="display: inline_block"><br>
-  <img align="center" alt="Firebase" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain.svg"> &nbsp;&nbsp;
   <img align="center" alt="React" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg"> &nbsp;&nbsp;
   <img align="center" alt="Typescript" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-plain.svg">
  &nbsp;&nbsp;
