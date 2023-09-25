@@ -16,8 +16,8 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-zinc-700 shadow-xl p-4">
-      <div className="flex flex-col md:flex-row items justify-center">
+    <footer className="bg-gradient-to-b from-zinc-600 to-zinc-800 shadow-xl p-4 mt-4 border-t border-zinc-500">
+      <div className="flex flex-col space-y-5 lg:space-y-0 lg:flex-row items-center justify-center">
         <div className="flex flex-col items-center justify-center md:w-1/3">
           <Link to="/" className="my-2">
             <img src={logoImg} alt="Nextek" className="w-44 h-auto" />
@@ -66,7 +66,7 @@ export function Footer() {
           reservados.
         </div>
 
-        <div className="flex flex-col text-center items-center justify-center md:w-1/3 mb-5 md:mb-0">
+        <div className="flex flex-col text-center items-center justify-center lg:w-1/3 mb-5 md:mb-0">
           <div className="text-gray-400">
             Inscreva-se em nossa newsletter para receber as últimas atualizações
             e ofertas.
@@ -81,7 +81,7 @@ export function Footer() {
             />
             <button
               type="button"
-              className="px-4 py-2 w-full md:w-auto bg-nextek text-white rounded-r-lg hover:bg-nextek-dark transition-all duration-200 ease-linear hover:bg-nextekHover"
+              className="px-4 py-2 w-full  bg-nextek text-white rounded-r-lg hover:bg-nextek-dark transition-all duration-200 ease-linear hover:bg-nextekHover"
               onClick={handleSubscribeClick}
             >
               Inscrever-se

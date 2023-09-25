@@ -10,7 +10,7 @@ export function Header() {
   const { cartAmount } = useContext(CartContext);
 
   return (
-    <header className="sticky top-0 left-0 z-50 w-full px-2 bg-zinc-700 drop-shadow-xl shadow-xl ">
+    <header className="sticky top-0 left-0 z-50 w-full px-2 bg-gradient-to-t from-zinc-600 to-zinc-800 drop-shadow-xl shadow-xl border-b border-zinc-500">
       <nav className="w-full max-w-7xl h-20 flex items-center justify-around px-5 mx-auto">
         <Link to="/">
           <img src={logoImg} alt="Nextek" className="w-44 h-auto" />
